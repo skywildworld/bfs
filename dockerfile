@@ -1,4 +1,5 @@
 FROM centos:latest
+
 MAINTAINER ystyle "lxy5266@live.com"
 RUN yum -y groupinstall 'Development Tools' && yum -y install zlib-devel wget fuse-devel git psmisc &&\
     cd / && git clone https://github.com/baidu/bfs.git &&\
